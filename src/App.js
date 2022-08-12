@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import './App.css';
 import productOne from './assets/product1.png';
 import productTwo from './assets/product2.png';
 import productThree from './assets/product3.png';
@@ -96,7 +95,7 @@ function App() {
                <div className="products" key={id}>
                   <img src={product.image} alt={product.name} />
                   <h3>{product.name}</h3>
-                  <p>{product.cost}</p>
+                  <p className="cost">{product.cost}</p>
                   <button className="cart" onClick={() => removeFromCart(product)}>
                      Remove
                   </button>
